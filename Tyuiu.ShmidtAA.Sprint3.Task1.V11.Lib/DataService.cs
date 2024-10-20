@@ -6,7 +6,7 @@ namespace Tyuiu.ShmidtAA.Sprint3.Task1.V11.Lib
         public double GetMultiplySeries(double value, int startValue, int stopValue)
         {
             double composition = 0;
-            while (startValue < stopValue)
+            while (startValue <= stopValue)
             {
                 composition = Math.Pow(value,startValue) + (1/2);
                 ++startValue;
