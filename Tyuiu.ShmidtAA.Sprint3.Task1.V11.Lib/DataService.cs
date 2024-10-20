@@ -8,7 +8,7 @@ namespace Tyuiu.ShmidtAA.Sprint3.Task1.V11.Lib
             double composition = 0;
             while (startValue <= stopValue)
             {
-                composition = Math.Pow(value,startValue) + (1/2);
+                composition *= Math.Pow(value,startValue) + (1/2);
                 ++startValue;
             }
             return Math.Round(composition,3);
