@@ -5,11 +5,11 @@ namespace Tyuiu.ShmidtAA.Sprint3.Task1.V11.Lib
     {
         public double GetMultiplySeries(double value, int startValue, int stopValue)
         {
-            double composition = 0;
+            double composition = 1;
             while (startValue <= stopValue)
             {
-                composition *= Math.Pow(value,startValue) + (1/2);
-                ++startValue;
+                composition = composition * ((double)Math.Pow(value,startValue) + (0.5));
+                startValue++;
             }
             return Math.Round(composition,3);
         }
