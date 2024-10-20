@@ -12,7 +12,7 @@ namespace Tyuiu.ShmidtAA.Sprint3.Task2.V5.Test
             int b = 20;
             double value = 0.75;
 
-            double waot = 1.0;
+            double waot = 0.333;
 
             Assert.AreEqual(waot, ds.GetSumSeries(value,i,b));
 
