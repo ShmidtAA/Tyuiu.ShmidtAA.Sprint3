@@ -1,0 +1,21 @@
+using Tyuiu.ShmidtAA.Sprint3.Task1.V11.Lib;
+namespace Tyuiu.ShmidtAA.Sprint3.Task1.V11.Test
+{
+    [TestClass]
+    public class DataServiceTest
+    {
+        [TestMethod]
+        public void TestMethod1()
+        {
+            DataService ds = new DataService();
+            int StartValue = 1;
+            int EndValue = 14;
+            double value = 0.75;
+
+            double wait = 0.024;
+
+            Assert.AreEqual(wait, ds.GetMultiplySeries(value, StartValue, EndValue));
+
+        }
+    }
+}
