@@ -16,6 +16,11 @@ namespace Tyuiu.ShmidtAA.Sprint3.Task5.V5.Test
             int stopValue2 = 10;
 
 
+            double wait  = 98.286d;
+            DataService ds = new DataService(); 
+            Assert.AreEqual(wait, ds.GetSumSumSeries(x, startValue1, startValue2, stopValue1, stopValue2));
+
+
         }
     }
 }
