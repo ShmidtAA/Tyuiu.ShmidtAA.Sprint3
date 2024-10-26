@@ -15,7 +15,7 @@ namespace Tyuiu.ShmidtAA.Sprint3.Task4.V30.Lib
                 res += (Math.Sin(i) / i);
             }
 
-            return res;
+            return Math.Round(res,3);
             
         }
     }

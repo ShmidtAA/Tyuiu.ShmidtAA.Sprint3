@@ -11,7 +11,7 @@ namespace Tyuiu.ShmidtAA.Sprint3.Task4.V30.Test
 
             double res = ds.Calculate(-5,5);
 
-            Assert.AreEqual(1.8496, res);
+            Assert.AreEqual(1.924, res);
 
         }
     }
