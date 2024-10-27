@@ -37,15 +37,15 @@ namespace Tyuiu.ShmidtAA.Sprint3.Task7.V9
             double[] res = new double[len];
             res = ds.GetMassFunction(startValue, endValue);
 
-            Console.WriteLine("+-------+-------+");
-            Console.WriteLine("|   x   |  f(x) |");
-            Console.WriteLine("+-------+-------+");
+            Console.WriteLine("+-------+--------+");
+            Console.WriteLine("|   x   |  f(x)  |");
+            Console.WriteLine("+-------+--------+");
             for (int i = 0; i <= len - 1; i++)
             {
-                Console.WriteLine("| {0,5:d} | {1,5:f2} |", startValue, res[i]);
+                Console.WriteLine("| {0,5:d} | {1,6:f2} |", startValue, res[i]);
                 startValue++;
             }
-            Console.WriteLine("+-------+-------+");
+            Console.WriteLine("+-------+--------+");
             Console.ReadKey();
 
 
