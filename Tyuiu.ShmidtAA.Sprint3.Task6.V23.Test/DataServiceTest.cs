@@ -1,3 +1,4 @@
+using Tyuiu.ShmidtAA.Sprint3.Task6.V23.Lib;
 namespace Tyuiu.ShmidtAA.Sprint3.Task6.V23.Test
 {
     [TestClass]
@@ -6,6 +7,12 @@ namespace Tyuiu.ShmidtAA.Sprint3.Task6.V23.Test
         [TestMethod]
         public void TestMethod1()
         {
+
+            DataService ds = new DataService();
+
+            int wait = 34;
+
+            Assert.AreEqual(wait, ds.GetSumTheDivisors(18, 28));
         }
     }
 }
